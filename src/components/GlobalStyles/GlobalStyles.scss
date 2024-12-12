@@ -2,6 +2,10 @@
 
 :root {
     --primary: rgb(255 44 85);
+
+    // Default layout 
+    --default-layout-header-height: 60px;
+    --default-layout-width: 1150px;
 }
 
 * {
