@@ -1,0 +1,39 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    padding: 9px 16px;
+
+    &:hover {
+        background-color: var(--search-button-bgColor-hover);
+    }
+}
+
+.avatar {
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 12px;
+}
+
+.info {
+    flex: 1
+}
+.name {
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.check-icon {
+    position: absolute;
+    font-size: 1.2rem;
+    margin-left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(32, 213, 236);
+}
+
+.username {
+    color: rgba(22, 24, 35, 0.5);
+}

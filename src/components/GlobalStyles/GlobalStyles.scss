@@ -3,11 +3,12 @@
 :root {
     --primary: rgb(255 44 85);
     --black: #000;
+    --white: #fff;
     --text-color: #333;
 
     // Default layout 
     --default-layout-header-height: 60px;
-    --default-layout-width: 1150px;
+    --default-layout-width: 100%;
 
 }
 
@@ -34,6 +35,10 @@ body {
 button, input, [tabindex] {
     outline: none;
     border: none;
+}
+
+button {
+    cursor: pointer;
 }
 
 a[href] {

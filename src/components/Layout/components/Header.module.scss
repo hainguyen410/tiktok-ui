@@ -5,6 +5,7 @@
     --search-button-width: 52px;
     --search-button-color: rgba(22, 24, 35, 0.34);
     --search-button-bgColor-active: rgba(22, 24, 35, 0.06);
+    --search-button-bgColor-hover: rgba(22, 24, 35, 0.03);
 
     height: var(--default-layout-header-height, 60px);
     width: 100%;
@@ -15,23 +16,30 @@
 
 .inner {
     height: 100%;
-    width: var(--default-layout-width);  
+    width: var(--default-layout-width);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 24px;
+    padding-left: 16px;
+}
+
+.search,
+.search-result {
+    width: 500px;
 }
 
 .search {
     position: relative;
-    width: 500px;
     height: var(--search-box-height);
     background-color: var(--search-button-bgColor-active);
     border-radius: var(--search-border-radius);
     padding-left: 16px;
     display: flex;
     border: 1px solid transparent;
-    
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
         border-color: rgba(22, 24, 35, 0.06);
     }
 
@@ -46,7 +54,7 @@
         caret-color: hotpink;
     }
 
-    input:not(:placeholder-shown) ~ .search-btn {
+    input:not(:placeholder-shown)~.search-btn {
         color: rgba(22, 24, 35, 0.75);
     }
 
@@ -59,8 +67,18 @@
         right: var(--search-button-width);
         background-color: rgba(22, 24, 35, 0.12);
     }
+}
 
+.search-result {
+    padding-top: 8px;
+}
 
+.search-title {
+    padding: 5px 12px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 18px;
+    color: rgba(22, 24, 35, 0.5);
 }
 
 .clear,
@@ -72,6 +90,7 @@
     color: var(--search-button-color);
     cursor: pointer;
 }
+
 .search-btn {
     width: var(--search-button-width);
     height: 100%;
@@ -81,10 +100,26 @@
     color: var(--search-button-color);
 
     &:hover {
-        background-color: rgba(22,24,35,0.03);
+        background-color: rgba(22, 24, 35, 0.03);
         cursor: pointer;
     }
+
     &:active {
         background-color: var(--search-button-bgColor-active);
     }
+}
+
+.more-btn {
+    font-size: 2rem;
+    width: 20px;
+    height: 20px;
+    margin-left: 24px;
+    background-color: transparent;
+}
+
+//Menu
+
+.menu-item {
+    min-width: 224px;
+    padding: 4px 8px;
 }

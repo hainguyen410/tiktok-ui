@@ -1,0 +1,76 @@
+.wrapper {
+    min-width: 100px;
+    margin-left: 16px;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 21px;
+    padding: 6px 8px;
+    min-height: 36px;
+    background-color: var(--white);
+    color: var(--text-color);
+    border: 1px solid transparent;
+    cursor: pointer;
+    user-select: none;
+
+    +.wrapper {
+        margin-left: 8px;
+    }
+
+    &.disabled {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}
+
+.rounded {
+    border-radius: 999px;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    color: rgba(22, 24, 35, 0.75);
+
+    &:hover {
+        border-color: rgba(22, 24, 35, 0.2);
+        box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 8px;;
+    }
+}
+
+
+.primary {
+    color: var(--white);
+    background-color: var(--primary);
+    border-color: var(--primary);
+
+    &:hover {
+        border-color: var(--primary);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), rgb(254, 44, 85);
+    }
+}
+
+.outline {
+    color: var(--primary);
+    border-color: currentColor;
+    
+    &:hover {
+        border-color: currentColor;
+        background-color: rgba(254, 44, 85, 0.06)
+    }
+}
+
+.text {
+    color: var(--text-color);
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+
+.small {
+    min-width: 106px;
+    padding: 6px 8px;
+}
+
+.large {
+    min-width: 140px;
+    padding: 14px 16px;
+}
